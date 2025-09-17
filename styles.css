@@ -63,7 +63,11 @@ img{max-width:100%;display:block;border-radius:12px}
 .testimonials blockquote{background:var(--surface);padding:16px;border-left:4px solid var(--brand);border-radius:12px;box-shadow:var(--shadow);margin:0}
 .testimonials cite{display:block;color:var(--muted);margin-top:8px;font-style:normal}
 
-.contact .qr img{max-width:220px;border-radius:10px}
+.contact .qr img {
+  max-width: 220px;
+  border-radius: var(--radius); /* usa o mesmo raio dos cards */
+  box-shadow: var(--shadow);   /* adiciona a mesma sombra */
+}
 .ticks{list-style:none;padding-left:0}
 .ticks li{padding-left:28px;position:relative;margin:8px 0}
 .ticks li:before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:700}
