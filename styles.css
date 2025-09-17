@@ -85,3 +85,9 @@ img{max-width:100%;display:block;border-radius:12px}
   .nav{display:none}
   .menu{display:block}
 }
+/* Esconde o QR code em telas pequenas */
+@media (max-width: 600px) {
+  .qr-card {
+    display: none;
+  }
+}
